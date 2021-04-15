@@ -5,7 +5,7 @@ const List = ({ itemList }) => {
 	return (
 		<div>
 			{itemList.map(itemObj => {
-				return <p>{itemObj.item}</p>;
+				return <li key={Math.random() * 1000}>{itemObj.item}</li>;
 			})}
 		</div>
 	);
