@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import List from "./list";
 
 //include images into your bundle
 
@@ -14,7 +15,7 @@ export function App() {
 
 	const onSubmitHandler = e => {
 		setItemList([...itemList, currentItem]);
-		console.log(itemList);
+		//console.log(itemList);
 		setCurrentItem("");
 	};
 
@@ -27,11 +28,8 @@ export function App() {
 					onChange={onChangeHandler}
 				/>
 				<button onClick={onSubmitHandler}> + </button>
-				<ul>
-					<li>{itemList[0]}</li>
-					<li>{itemList[1]}</li>
-					<li>{itemList[2]}</li>
-				</ul>
+
+				<List itemList={itemList} />
 			</div>
 		</div>
 	);
