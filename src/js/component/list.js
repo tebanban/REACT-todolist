@@ -4,7 +4,9 @@ import PropTypes from "prop-types";
 const List = ({ itemList }) => {
 	return (
 		<div>
-			<p>{itemList}</p>
+			{itemList.map(itemObj => {
+				return <p>{itemObj.item}</p>;
+			})}
 		</div>
 	);
 };

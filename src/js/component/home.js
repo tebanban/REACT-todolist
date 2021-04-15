@@ -5,7 +5,7 @@ import List from "./list";
 
 //create your first component
 export function App() {
-	const [currentItem, setCurrentItem] = useState(null);
+	const [currentItem, setCurrentItem] = useState("");
 	const [itemList, setItemList] = useState([]);
 
 	const onChangeHandler = e => {
@@ -14,7 +14,10 @@ export function App() {
 	};
 
 	const onSubmitHandler = e => {
-		setItemList([...itemList, currentItem]);
+		setItemList([
+			...itemList,
+			{ item: currentItem, completed: false, id: Math.random() * 1000 }
+		]);
 		//console.log(itemList);
 		setCurrentItem("");
 	};
