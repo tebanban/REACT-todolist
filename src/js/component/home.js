@@ -23,16 +23,19 @@ export function App() {
 	};
 
 	return (
-		<div className="text-center mt-5">
-			<div className="wrapper">
-				<input
-					type="text"
-					value={currentItem}
-					onChange={onChangeHandler}
-				/>
-				<button onClick={onSubmitHandler}> + </button>
-
-				<List itemList={itemList} />
+		<div className="App">
+			<div className="wrapper bg-dark rounded">
+				<div className="input-wrapper rounded p-2">
+					<input
+						type="text"
+						value={currentItem}
+						onChange={onChangeHandler}
+					/>
+					<button onClick={onSubmitHandler}> + </button>
+				</div>
+				<div>
+					<List itemList={itemList} />
+				</div>
 			</div>
 		</div>
 	);

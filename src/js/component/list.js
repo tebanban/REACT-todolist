@@ -3,9 +3,14 @@ import PropTypes from "prop-types";
 
 const List = ({ itemList }) => {
 	return (
-		<div>
+		<div className="item card bg-dark text-white">
 			{itemList.map(itemObj => {
-				return <li key={Math.random() * 1000}>{itemObj.item}</li>;
+				return (
+					<li key={Math.random() * 1000}>
+						{itemObj.item}
+						<button> x </button>
+					</li>
+				);
 			})}
 		</div>
 	);
