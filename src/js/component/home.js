@@ -16,7 +16,7 @@ export function App() {
 	const onSubmitHandler = e => {
 		setItemList([
 			...itemList,
-			{ item: currentItem, completed: false, id: Math.random() * 1000 }
+			{ text: currentItem, completed: false, id: Math.random() * 1000 }
 		]);
 		//console.log(itemList);
 		setCurrentItem("");
@@ -34,7 +34,7 @@ export function App() {
 					<button onClick={onSubmitHandler}> + </button>
 				</div>
 				<div>
-					<List itemList={itemList} />
+					<List itemList={itemList} setItemList={setItemList} />
 				</div>
 			</div>
 		</div>

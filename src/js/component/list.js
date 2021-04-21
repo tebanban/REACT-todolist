@@ -1,14 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const List = ({ itemList }) => {
+const List = ({ itemList, setItemList }) => {
+	const deleteText = id => {
+		const newList = itemList.filter(itemObj => {
+			return itemObj.id !== id;
+		});
+		setItemList(newList);
+	};
+
 	return (
 		<div className="item card bg-dark text-white">
 			{itemList.map(itemObj => {
 				return (
 					<li key={Math.random() * 1000}>
-						{itemObj.item}
-						<button> x </button>
+						{itemObj.text}
+						<button onClick={() => deleteText(itemObj.id)}>
+							{" "}
+							x{" "}
+						</button>
 					</li>
 				);
 			})}
@@ -19,5 +29,6 @@ const List = ({ itemList }) => {
 export default List;
 
 List.propTypes = {
-	itemList: PropTypes.string
+	itemList: PropTypes.string,
+	setItemList: PropTypes.string
 };
