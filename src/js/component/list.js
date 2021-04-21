@@ -13,11 +13,13 @@ const List = ({ itemList, setItemList }) => {
 		<div className="item card bg-dark text-white">
 			{itemList.map(itemObj => {
 				return (
-					<li key={Math.random() * 1000}>
+					<li className="itemText " key={Math.random() * 1000}>
 						{itemObj.text}
-						<button onClick={() => deleteText(itemObj.id)}>
+						<button
+							className="delButton rouded"
+							onClick={() => deleteText(itemObj.id)}>
 							{" "}
-							x{" "}
+							<i className="fas fa-minus-circle" />{" "}
 						</button>
 					</li>
 				);

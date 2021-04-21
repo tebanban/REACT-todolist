@@ -23,15 +23,23 @@ export function App() {
 	};
 
 	return (
-		<div className="App">
-			<div className="wrapper bg-dark rounded">
-				<div className="input-wrapper rounded p-2">
+		<div className="container">
+			<div className="col wrapper bg-dark rounded">
+				<h3 className="text-white">My ToDo List</h3>
+				<div className="input-wrapper p-2">
 					<input
+						className="input rounded"
 						type="text"
+						placeholder="I have to..."
 						value={currentItem}
 						onChange={onChangeHandler}
 					/>
-					<button onClick={onSubmitHandler}> + </button>
+					<button
+						className="addButton rounded"
+						onClick={onSubmitHandler}>
+						{" "}
+						<i className="fas fa-plus" />{" "}
+					</button>
 				</div>
 				<div>
 					<List itemList={itemList} setItemList={setItemList} />

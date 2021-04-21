@@ -3,19 +3,7 @@
 body{
     margin:0;
 }
-.App {
-  text-align: center;
-}
 
-.App-header {
-  min-height: 200vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 .container {
     text-align: center;
     margin: auto
@@ -26,7 +14,8 @@ body{
      justify-content: center;
      text-align: center;
      padding: 10px;
-
+     width: 40rem;
+     margin: auto;
 }
 
 
