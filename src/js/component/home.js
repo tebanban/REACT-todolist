@@ -24,18 +24,18 @@ export function App() {
 
 	return (
 		<div className="container">
-			<div className="col wrapper bg-dark rounded">
+			<div className="col wrapper rounded">
 				<h3 className="text-white">My ToDo List</h3>
-				<div className="input-wrapper p-2">
+				<div className="row input-wrapper d-flex justify-content-between p-2">
 					<input
-						className="input rounded"
+						className="input border rounded p-2 col-10"
 						type="text"
 						placeholder="I have to..."
 						value={currentItem}
 						onChange={onChangeHandler}
 					/>
 					<button
-						className="addButton rounded"
+						className="addButton border rounded p-2 ml-1 col-1"
 						onClick={onSubmitHandler}>
 						{" "}
 						<i className="fas fa-plus" />{" "}

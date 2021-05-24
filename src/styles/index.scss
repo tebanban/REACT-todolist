@@ -6,7 +6,8 @@ body{
 
 .container {
     text-align: center;
-    margin: auto
+    margin: auto;
+     background-color: #563d7c;
 } 
 
 .wrapper{ 
@@ -14,8 +15,13 @@ body{
      justify-content: center;
      text-align: center;
      padding: 10px;
-     width: 40rem;
+     width: auto;
      margin: auto;
 }
 
 
+.itemText{
+    background-color: #563d7c;
+}
+
+//

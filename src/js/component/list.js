@@ -13,7 +13,9 @@ const List = ({ itemList, setItemList }) => {
 		<div className="item card bg-dark text-white">
 			{itemList.map(itemObj => {
 				return (
-					<li className="itemText " key={Math.random() * 1000}>
+					<li
+						className="itemText d-flex justify-content-between p-2 "
+						key={Math.random() * 1000}>
 						{itemObj.text}
 						<button
 							className="delButton rouded"
