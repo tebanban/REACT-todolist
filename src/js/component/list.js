@@ -19,7 +19,7 @@ const List = ({ itemList, setItemList }) => {
 						style={{ width: "12rem", height: "16rem" }}>
 						{itemObj.text}
 						<button
-							className="delButton rouded"
+							className="delButton border rounded"
 							onClick={() => deleteText(itemObj.id)}>
 							{" "}
 							<i className="fas fa-minus-circle" />{" "}
