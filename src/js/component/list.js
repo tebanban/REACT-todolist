@@ -10,12 +10,13 @@ const List = ({ itemList, setItemList }) => {
 	};
 
 	return (
-		<div className="item card bg-dark text-white">
+		<div className="cardContainer row">
 			{itemList.map(itemObj => {
 				return (
-					<li
-						className="itemText d-flex justify-content-between p-2 "
-						key={Math.random() * 1000}>
+					<div
+						className=" card d-flex justify-content-between p-2 m-3"
+						key={Math.random() * 1000}
+						style={{ width: "12rem", height: "16rem" }}>
 						{itemObj.text}
 						<button
 							className="delButton rouded"
@@ -23,7 +24,7 @@ const List = ({ itemList, setItemList }) => {
 							{" "}
 							<i className="fas fa-minus-circle" />{" "}
 						</button>
-					</li>
+					</div>
 				);
 			})}
 		</div>

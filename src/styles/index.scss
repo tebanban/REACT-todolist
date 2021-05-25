@@ -6,22 +6,24 @@ body{
 
 .container {
     text-align: center;
-    margin: auto;
-     background-color: #563d7c;
-} 
+   
+}
 
-.wrapper{ 
+.header{ 
      min-height: 10vh;
      justify-content: center;
      text-align: center;
      padding: 10px;
      width: auto;
      margin: auto;
+     background-color: #563d7c;
 }
 
 
-.itemText{
-    background-color: #563d7c;
+.card{
+    background-color: yellow;
 }
 
-//
+.delButton{
+     width: 2rem;
+}

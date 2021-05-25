@@ -24,7 +24,7 @@ export function App() {
 
 	return (
 		<div className="container">
-			<div className="col wrapper rounded">
+			<div className="header border rounded p-4">
 				<h3 className="text-white">My ToDo List</h3>
 				<div className="row input-wrapper d-flex justify-content-between p-2">
 					<input
@@ -35,15 +35,15 @@ export function App() {
 						onChange={onChangeHandler}
 					/>
 					<button
-						className="addButton border rounded p-2 ml-1 col-1"
+						className="addButton border rounded p-2  col-1"
 						onClick={onSubmitHandler}>
 						{" "}
 						<i className="fas fa-plus" />{" "}
 					</button>
 				</div>
-				<div>
-					<List itemList={itemList} setItemList={setItemList} />
-				</div>
+			</div>
+			<div className="row mt-4">
+				<List itemList={itemList} setItemList={setItemList} />
 			</div>
 		</div>
 	);
