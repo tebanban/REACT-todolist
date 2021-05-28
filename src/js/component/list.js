@@ -17,6 +17,7 @@ const List = ({ itemList, setItemList }) => {
 						className=" card d-flex justify-content-between p-2 m-3"
 						key={Math.random() * 1000}
 						style={{ width: "12rem", height: "16rem" }}>
+						<h3>Task N°{itemObj.index}</h3>
 						{itemObj.text}
 						<button
 							className="delButton border rounded"

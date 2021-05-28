@@ -16,9 +16,14 @@ export function App() {
 	const onSubmitHandler = e => {
 		setItemList([
 			...itemList,
-			{ text: currentItem, completed: false, id: Math.random() * 1000 }
+			{
+				text: currentItem,
+				completed: false,
+				id: Math.random() * 1000,
+				index: itemList.length + 1
+			}
 		]);
-		//console.log(itemList);
+		console.log(itemList);
 		setCurrentItem("");
 	};
 
