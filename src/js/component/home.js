@@ -47,7 +47,7 @@ export function App() {
 					</button>
 				</div>
 			</div>
-			<div className="row mt-4">
+			<div className="row mt-4 listSection ">
 				<List itemList={itemList} setItemList={setItemList} />
 			</div>
 		</div>

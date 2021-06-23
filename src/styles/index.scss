@@ -16,14 +16,28 @@ body{
      padding: 10px;
      width: auto;
      margin: auto;
-     background-color: #563d7c;
+     background-color: #a0a0a0;
+  
 }
 
 
 .card{
-    background-color: yellow;
+    background-color: #ffbb00;
+    box-shadow: 5px 5px  #c7c7c7;
+    
 }
 
 .delButton{
      width: 2rem;
+}
+
+.listSection{
+    
+     justify-content: center;
+     text-align: center;
+     padding: 10px;
+     width: auto;
+     margin: auto;
+     background-color: #eeeeee;
+
 }
