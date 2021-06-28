@@ -13,7 +13,7 @@ export function App() {
 		//console.log("current", e.target.value);
 	};
 
-	const onSubmitHandler = e => {
+	const onSubmitHandler = () => {
 		setItemList([
 			...itemList,
 			{
@@ -23,7 +23,7 @@ export function App() {
 				index: itemList.length + 1
 			}
 		]);
-		console.log(itemList);
+		//console.log(itemList);
 		setCurrentItem("");
 	};
 
