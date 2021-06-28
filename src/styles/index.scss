@@ -21,9 +21,16 @@ body{
 }
 
 
-.card{
+.yellowCard{
     background-color: #ffbb00;
     box-shadow: 5px 5px 3px #c7c7c7;
+    margin: 10px;
+    
+}
+.redCard{
+    background-color: #ff3300;
+    box-shadow: 5px 5px 3px #c7c7c7;
+    margin: 10px
     
 }
 
@@ -41,3 +48,6 @@ body{
      background-color: #eeeeee;
 
 }
+
+
+

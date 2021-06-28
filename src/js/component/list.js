@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 const List = ({ itemList, setItemList }) => {
@@ -9,12 +9,18 @@ const List = ({ itemList, setItemList }) => {
 		setItemList(newList);
 	};
 
+	const [cardColor, setCardColor] = useState("yellowCard");
+
+	const toggleColor = () => {
+		setCardColor("redCard");
+	};
+
 	return (
 		<div className="cardContainer row">
 			{itemList.map(itemObj => {
 				return (
 					<div
-						className=" card d-flex justify-content-between p-2 m-3"
+						className={cardColor}
 						key={Math.random() * 1000}
 						style={{ width: "12rem", height: "16rem" }}>
 						<h3>Task N°{itemObj.index}</h3>
@@ -25,6 +31,7 @@ const List = ({ itemList, setItemList }) => {
 							{" "}
 							<i className="fas fa-minus-circle" />{" "}
 						</button>
+						<button onClick={toggleColor}>red</button>
 					</div>
 				);
 			})}
