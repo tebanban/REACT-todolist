@@ -22,20 +22,47 @@ body{
 
 
 .yellowCard{
-    background-color: yellow;
+    background-color: #ffd900;
     box-shadow: 5px 5px 3px #c7c7c7;
     margin: 10px;
     
 }
 .redCard{
-    background-color: red;
+    background-color: #ff2600;
+    box-shadow: 5px 5px 3px #c7c7c7;
+    margin: 10px
+    
+}
+
+.greenCard{
+    background-color: #00ff62;
     box-shadow: 5px 5px 3px #c7c7c7;
     margin: 10px
     
 }
 
 .delButton{
-     width: 2rem;
+     width: 3rem;
+     margin: 2px
+}
+
+.redButton{
+     width: 3rem;
+     background-color: #ff2600;
+     margin: 2px
+     
+}
+
+.greenButton{
+     width: 3rem;
+     background-color: #00ff62;
+     margin: 2px
+     
+}
+.yellowButton{
+     width: 3rem;
+     background-color: #ffd900;
+     margin: 2px
      
 }
 

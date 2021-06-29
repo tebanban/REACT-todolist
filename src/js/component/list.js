@@ -11,8 +11,16 @@ const List = ({ itemList, setItemList }) => {
 
 	const [cardColor, setCardColor] = useState("yellowCard");
 
-	const toggleColor = () => {
-		setCardColor(cardColor == "yellowCard" ? "redCard" : "yellowCard");
+	const yellowToggleColor = () => {
+		setCardColor("yellowCard");
+	};
+
+	const redToggleColor = () => {
+		setCardColor("redCard");
+	};
+
+	const greenToggleColor = () => {
+		setCardColor("greenCard");
 	};
 
 	return (
@@ -31,7 +39,21 @@ const List = ({ itemList, setItemList }) => {
 							{" "}
 							<i className="fas fa-minus-circle" />{" "}
 						</button>
-						<button onClick={toggleColor}>color</button>
+						<button
+							className="redButton border rounded"
+							onClick={() => redToggleColor(itemObj.id)}>
+							R
+						</button>
+						<button
+							className="greenButton border rounded"
+							onClick={() => greenToggleColor(itemObj.id)}>
+							G
+						</button>
+						<button
+							className="yellowButton border rounded"
+							onClick={() => yellowToggleColor(itemObj.id)}>
+							Y
+						</button>
 					</div>
 				);
 			})}
